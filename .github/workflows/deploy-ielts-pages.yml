@@ -1,0 +1,58 @@
+name: Deploy IELTS Atlas to GitHub Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/deploy-ielts-pages.yml'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch maintained IELTS Atlas static site
+        run: |
+          git clone --depth 1 --branch main https://github.com/sallowayma-git/IELTS-practice.git site
+          rm -rf site/.git site/.github
+          printf 'User-agent: *\nDisallow: /\n' > site/robots.txt
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('site/index.html')
+          s = p.read_text(encoding='utf-8')
+          marker = '<meta name="viewport" content="width=device-width, initial-scale=1.0" />'
+          if 'name="robots"' not in s:
+              s = s.replace(marker, marker + '\n        <meta name="robots" content="noindex, nofollow, noarchive" />', 1)
+          p.write_text(s, encoding='utf-8')
+          PY
+          touch site/.nojekyll
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
