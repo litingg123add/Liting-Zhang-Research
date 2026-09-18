@@ -1,74 +1,62 @@
-# Liting Zhang - Research Portfolio
+# Liting Zhang — Research Portfolio
 
-Master Student in Electronic Information  
-Shanghai Dianji University
+Master's student in Electronic Information at Shanghai Dianji University  
+Research interests: Scientific Machine Learning, Predictive Maintenance, Nonlinear Dynamics, Industrial AI
 
 ## Research Profile
 
-My research focuses on the intersection of **Physics-informed Machine Learning**, **Nonlinear Dynamics**, and **Industrial AI**. I am interested in developing data-driven and physics-guided approaches for complex engineering systems, including predictive maintenance, condition monitoring, and intelligent modeling.
+My current work connects data-driven modelling with engineering knowledge for complex dynamical systems. I am particularly interested in condition monitoring under changing operating conditions, physics-guided machine learning, nonlinear dynamics, and interpretable health indicators for industrial systems.
 
-## Research Interests
-
-- Physics-informed Machine Learning (PINNs, Neural Operators)
-- Predictive Maintenance and Prognostics & Health Management (PHM)
-- Fault Detection and Time-series Anomaly Detection
-- Nonlinear Dynamics, Fractional Systems, and Chaotic Modeling
-- Digital Twin and Intelligent Monitoring of Engineering Systems
-- Machine Learning for Energy and Industrial Applications
-
-## Selected Projects
+## Featured Project
 
 ### Wind Turbine Predictive Health Monitoring
 
-A research-oriented framework for SCADA-based wind turbine condition monitoring and predictive maintenance.
+A reproducible research prototype for SCADA-based condition monitoring with emphasis on **operating-condition-aware normal-behaviour modelling**.
 
-Topics:
-- Industrial time-series analysis
-- Physics-informed feature engineering
-- Fault detection and maintenance event identification
-- Deep learning approaches for health monitoring
+Main questions:
+- How can genuine degradation be separated from changes caused by wind speed, load and operating regime?
+- How should a normal-behaviour model be validated without time leakage?
+- Can residual-based indicators provide earlier and more interpretable warning signals around maintenance events?
 
-Repository: `projects/Wind-PHM-AI`
+Code and documentation: `projects/Wind-PHM-AI/`
 
----
+Current pipeline:
+1. SCADA preprocessing and timestamp handling
+2. Operating-condition feature engineering
+3. Normal-behaviour model training
+4. Residual construction and EWMA smoothing
+5. Maintenance-event-oriented evaluation
 
-### Fractional Dynamics Learning with Artificial Intelligence
+A synthetic end-to-end demo is included so the pipeline can be run without redistributing the original dataset.
 
-Physics-informed learning approaches for fractional nonlinear systems and chaotic dynamics.
+## Other Research Directions
 
-Topics:
-- Fractional differential systems
-- Bifurcation analysis
-- Chaotic dynamics prediction
-- PINN and neural operator methods
+### Fractional Dynamics + Scientific Machine Learning
+Work on nonlinear and fractional-order dynamical systems, bifurcation and chaotic behaviour, numerical simulation, and future integration with PINNs / neural operators.
 
-Repository: `projects/Fractional-Dynamics-AI`
+See: `projects/Fractional-Dynamics-AI/`
 
----
+### Industrial Digital Twin / Sensing
+Engineering work related to sensor acquisition, physical modelling, embedded systems and real-time monitoring.
 
-### Industrial Digital Twin Demonstration Platform
-
-An engineering-oriented digital twin prototype integrating sensing, modeling, and visualization.
-
-Topics:
-- Sensor data acquisition
-- Physical modeling
-- Real-time monitoring
-- Intelligent engineering systems
-
-Repository: `projects/Industrial-Digital-Twin`
+See: `projects/Industrial-Digital-Twin/`
 
 ## Publications
 
-Selected publications and research outputs will be collected in:
+Selected accepted research outputs and publication status are summarized in:
 
-`publications/`
+`publications/README.md`
 
-## Technical Skills
+## Technical Stack
 
 **Programming:** Python, MATLAB, C/C++, Java  
-**Machine Learning:** PyTorch, TensorFlow, Deep Learning, Scientific Machine Learning  
-**Engineering:** Sensor Systems, Embedded Development, Data Analysis, Digital Twin Concepts
+**Data / ML:** pandas, NumPy, scikit-learn, PyTorch, time-series analysis  
+**Scientific ML:** PINNs, neural operators, data-driven dynamical modelling  
+**Engineering:** sensor systems, embedded development, data acquisition, industrial monitoring
+
+## Repository Notes
+
+This repository is a research portfolio rather than a dump of raw project files. Public code is organized to make the methodology easy to inspect and reproduce. Raw industrial or licensed data are not uploaded.
 
 ## Contact
 
