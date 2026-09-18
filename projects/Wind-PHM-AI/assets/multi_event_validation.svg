@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470">
+<rect width="1000" height="470" rx="18" fill="#ffffff"/>
+<text x="50" y="42" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#111827">Locked multi-event validation</text>
+<text x="50" y="68" font-family="Arial,sans-serif" font-size="14" fill="#6b7280">Same XGBoost NBM, temporal split, EWMA threshold rule and persistence rule applied without retuning</text>
+<g font-family="Arial,sans-serif">
+<text x="50" y="136" font-size="14" fill="#374151">T07 · Generator bearing</text>
+ <rect x="270" y="118" width="480" height="24" rx="6" fill="#f3f4f6"/>
+ <rect x="270" y="118" width="387.6" height="24" rx="6" fill="#2563eb" opacity=".82"/><text x="665.6" y="135" font-size="13" font-weight="700" fill="#1f2937">25.8 d</text>
+ <text x="790" y="135" font-size="13" fill="#6b7280">holdout false episodes: <tspan font-weight="700" fill="#166534">0</tspan></text><text x="50" y="198" font-size="14" fill="#374151">T01 · Gearbox oil system</text>
+ <rect x="270" y="180" width="480" height="24" rx="6" fill="#f3f4f6"/>
+ <rect x="270" y="180" width="441.1" height="24" rx="6" fill="#2563eb" opacity=".82"/><text x="719.1" y="197" font-size="13" font-weight="700" fill="#1f2937">29.4 d</text>
+ <text x="790" y="197" font-size="13" fill="#6b7280">holdout false episodes: <tspan font-weight="700" fill="#9a3412">12</tspan></text><text x="50" y="260" font-size="14" fill="#374151">T06 · Generator bearing</text>
+ <rect x="270" y="242" width="480" height="24" rx="6" fill="#f3f4f6"/>
+ <rect x="270" y="242" width="300.8" height="24" rx="6" fill="#2563eb" opacity=".82"/><text x="578.8" y="259" font-size="13" font-weight="700" fill="#1f2937">20.1 d</text>
+ <text x="790" y="259" font-size="13" fill="#6b7280">holdout false episodes: <tspan font-weight="700" fill="#166534">0</tspan></text><text x="50" y="322" font-size="14" fill="#374151">T07 · Transformer phase 1</text>
+ <rect x="270" y="304" width="480" height="24" rx="6" fill="#f3f4f6"/>
+ <text x="282" y="321" font-size="13" font-weight="700" fill="#64748b">Missed</text>
+ <text x="790" y="321" font-size="13" fill="#6b7280">holdout false episodes: <tspan font-weight="700" fill="#9a3412">1</tspan></text><text x="50" y="384" font-size="14" fill="#374151">T11 · Hydraulic group</text>
+ <rect x="270" y="366" width="480" height="24" rx="6" fill="#f3f4f6"/>
+ <text x="282" y="383" font-size="13" font-weight="700" fill="#64748b">Missed</text>
+ <text x="790" y="383" font-size="13" fill="#6b7280">holdout false episodes: <tspan font-weight="700" fill="#9a3412">2</tspan></text>
+<text x="270" y="428" font-size="12" fill="#6b7280">0</text><text x="504" y="428" font-size="12" fill="#6b7280">16 days</text><text x="730" y="428" font-size="12" fill="#6b7280">32 days</text>
+<text x="50" y="453" font-size="13" fill="#4b5563">The negative cases are retained intentionally: the method is not presented as a universal cross-component detector.</text>
+</g></svg>
