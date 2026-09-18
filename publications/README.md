@@ -1,25 +1,31 @@
-# Publications
+# Publications and Accepted Research Outputs
 
-Selected research outputs.
+This page lists selected research outputs that can be disclosed publicly.
 
-## Journal Articles
+## Journal Article — Accepted
 
-### Exploring additional findings on the fraction, bifurcation and chaotic behaviors in models of lossy electrical transmission lines
+**Exploring additional findings on the fraction, bifurcation and chaotic behaviors in models of lossy electrical transmission lines**
 
-Status: Accepted (Pramana)
+Journal: *Pramana – Journal of Physics*  
+Status: **Accepted; proof / production stage**
 
-Topic:
-- Fractional nonlinear systems
-- Bifurcation analysis
-- Chaotic dynamics
-- Mathematical modeling
+Main topics:
+- nonlinear electrical transmission-line modelling
+- fractional-order dynamics
+- analytical solutions
+- bifurcation and chaotic behaviour
+- numerical verification
 
-## Conference Papers
+The article is not yet fully searchable online because the final publication record is still being processed by the publisher.
 
-### MLIC 2026
+## Conference Paper — Accepted
 
-Conference publication related to machine learning and intelligent computing.
+**MLIC 2026 — Machine Learning and Intelligent Computing**
 
----
+Status: **Accepted**
 
-More details and supplementary materials will be added gradually.
+The work is an 8-page conference paper and forms part of my broader research experience in machine learning and intelligent computing.
+
+## Notes
+
+Where publisher copyright or conference policy does not allow redistribution of the final formatted paper, I do not upload the publisher PDF directly. Manuscripts or supplementary material will only be added when sharing is permitted.
