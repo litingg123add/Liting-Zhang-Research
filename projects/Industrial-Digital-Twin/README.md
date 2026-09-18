@@ -1,21 +1,50 @@
-# Industrial Digital Twin Demonstration Platform
+# Industrial Sensing and Digital-Twin Prototype
 
 ## Overview
 
-An engineering-oriented digital twin prototype integrating sensor acquisition, physical modeling, and intelligent visualization.
+This project documents an engineering workflow developed from hands-on work in industrial sensing, calibration and monitoring.
 
-## Research Topics
+The emphasis is not on a purely graphical "digital twin", but on the full chain:
 
-- Sensor data acquisition
-- Embedded systems
-- Physical model based monitoring
-- Engineering data visualization
-- Intelligent manufacturing systems
+```
+sensor → acquisition → physical interpretation → monitoring logic → HMI
+```
 
-## Background
+## Engineering Background
 
-Inspired by industrial sensing and calibration system development experience.
+During my technology-development internship in Germany, I worked on a pressure-calibration / monitoring prototype involving embedded sensing, data acquisition and a browser-based HMI.
 
-## Status
+Publicly shareable technical elements include:
+- Raspberry Pi based edge computing
+- ADC and distance-sensor integration
+- SPI / I2C device communication
+- real-time measurement collection
+- Flask-based HMI
+- live curves and multilingual interface
+- engineering threshold logic
+- basic physical interpretation using fluid-flow models
 
-Prototype framework under development.
+## System View
+
+### 1. Sensor layer
+Signals are collected from multiple sensors with different sampling and interface characteristics.
+
+### 2. Acquisition layer
+Raw values are converted into a consistent digital representation with timing and calibration information.
+
+### 3. Physical layer
+Measurements are interpreted with engineering constraints rather than treated as isolated numbers. Depending on the subsystem, this can include flow, pressure, geometric or operating-condition relationships.
+
+### 4. Monitoring layer
+Thresholds and trend logic are used to identify abnormal states and support calibration / testing.
+
+### 5. HMI layer
+The monitoring state and live measurements are shown through a lightweight web interface for engineering use.
+
+## Why It Matters for My Research
+
+This experience motivates my interest in combining data-driven models with physical knowledge. In industrial monitoring, a model has to work with imperfect sensors, changing operating conditions and real system constraints.
+
+## Confidentiality Note
+
+No proprietary company source code, calibration constants, customer data or internal technical documents are included in this public repository.
