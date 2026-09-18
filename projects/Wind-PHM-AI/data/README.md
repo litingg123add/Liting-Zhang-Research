@@ -1,28 +1,25 @@
 # Data
 
-Raw SCADA and maintenance files are not committed to this repository.
+Raw EDP SCADA data are not duplicated in this repository.
 
-The research pipeline is designed for a public wind-turbine SCADA dataset with 10-minute measurements from multiple turbines and associated maintenance / fault records.
+Run:
 
-Typical variables used by the current work include:
-- wind speed
-- ambient temperature
-- wind direction
-- active power
-- rotor RPM
-- generator RPM
-- pitch angle
-- gearbox / generator / stator temperatures
-- maintenance-event timestamps
-
-## Expected local layout
-
-```
-data/
-├── raw/
-│   ├── scada.csv
-│   └── maintenance.csv
-└── processed/
+```bash
+python src/prepare_data.py
 ```
 
-Large raw data, licensed data, and any industrial confidential data should stay outside Git.
+The script downloads the official 2016 EDP SCADA workbook and maintenance log,
+then creates a compact local cache used by the analysis.
+
+Official source:
+- https://edp.com/en/innovation/data
+- https://doi.org/10.17632/zjxjnjp3xs.1
+
+Expected generated files:
+
+```text
+data/raw/Wind-Turbine-SCADA-signals-2016.xlsx
+data/raw/Historical-Failure-Logbook-2016.xlsx
+data/processed/signals_2016_selected.pkl.gz
+data/processed/failures_2016.csv
+```
