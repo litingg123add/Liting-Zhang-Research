@@ -1,62 +1,90 @@
 # Liting Zhang — Research Portfolio
 
 Master's student in Electronic Information at Shanghai Dianji University  
-Research interests: Scientific Machine Learning, Predictive Maintenance, Nonlinear Dynamics, Industrial AI
+Research interests: **Scientific Machine Learning · Predictive Maintenance · Nonlinear Dynamics · Industrial AI**
 
-## Research Profile
+This repository collects selected research code, reproducible case studies and technical notes from my work on data-driven engineering systems.
 
-My current work connects data-driven modelling with engineering knowledge for complex dynamical systems. I am particularly interested in condition monitoring under changing operating conditions, physics-guided machine learning, nonlinear dynamics, and interpretable health indicators for industrial systems.
+## Featured research — Wind Turbine PHM
 
-## Featured Project
+**Operating-condition-aware normal-behaviour modelling for SCADA condition monitoring**
 
-### Wind Turbine Predictive Health Monitoring
+The project asks a practical question: when temperature changes because wind speed, load and rotational speed also change, how can genuine abnormal behaviour be separated from normal operating variation?
 
-A reproducible research prototype for SCADA-based condition monitoring with emphasis on **operating-condition-aware normal-behaviour modelling**.
+| Primary T07 result | Value |
+|---|---:|
+| Chronological holdout R² | **0.903** |
+| Holdout MAE | **1.41 °C** |
+| First persistent residual excursion | **25.84 days before the logged event** |
+| Nominal-holdout persistent false-alarm episodes | **0** |
 
-Main questions:
-- How can genuine degradation be separated from changes caused by wind speed, load and operating regime?
-- How should a normal-behaviour model be validated without time leakage?
-- Can residual-based indicators provide earlier and more interpretable warning signals around maintenance events?
+[**Open the full project →**](projects/Wind-PHM-AI/)
 
-Code and documentation: `projects/Wind-PHM-AI/`
+![Wind-turbine early-warning result](projects/Wind-PHM-AI/assets/t07_residual_ewma.svg)
 
-Current pipeline:
-1. SCADA preprocessing and timestamp handling
-2. Operating-condition feature engineering
-3. Normal-behaviour model training
-4. Residual construction and EWMA smoothing
-5. Maintenance-event-oriented evaluation
+The repository includes the real EDP-data analysis pipeline, chronological leakage controls, XGBoost NBM, residual/EWMA monitoring, stored metrics and a locked multi-event validation. Negative validation cases are retained rather than hidden.
 
-A synthetic end-to-end demo is included so the pipeline can be run without redistributing the original dataset.
+## Research directions
 
-## Other Research Directions
+### 1. Predictive Maintenance / PHM
 
-### Fractional Dynamics + Scientific Machine Learning
-Work on nonlinear and fractional-order dynamical systems, bifurcation and chaotic behaviour, numerical simulation, and future integration with PINNs / neural operators.
+Topics:
+- operating-condition-aware monitoring
+- normal-behaviour modelling
+- residual-based anomaly detection
+- time-series health indicators
+- maintenance-event validation
+- generalisation under changing load and environment
 
-See: `projects/Fractional-Dynamics-AI/`
+Project: [Wind-PHM-AI](projects/Wind-PHM-AI/)
 
-### Industrial Digital Twin / Sensing
-Engineering work related to sensor acquisition, physical modelling, embedded systems and real-time monitoring.
+### 2. Nonlinear Dynamics + Scientific Machine Learning
 
-See: `projects/Industrial-Digital-Twin/`
+My earlier research focuses on nonlinear and fractional-order dynamical systems, including analytical solutions, bifurcation, chaotic behaviour and numerical verification.
+
+Current extension directions include:
+- PINNs / fractional PINNs
+- Fourier Neural Operators
+- DeepONet
+- long-horizon prediction of nonlinear and chaotic systems
+
+Project: [Fractional-Dynamics-AI](projects/Fractional-Dynamics-AI/)
+
+### 3. Industrial Sensing / Digital Twin
+
+Hands-on engineering work connects sensor acquisition, embedded computing, physical modelling and real-time monitoring.
+
+Examples include:
+- Raspberry Pi based edge computing
+- SPI / I2C sensor integration
+- pressure / distance sensing
+- physical interpretation of engineering measurements
+- Flask-based HMI and live visualisation
+
+Project: [Industrial-Digital-Twin](projects/Industrial-Digital-Twin/)
 
 ## Publications
 
-Selected accepted research outputs and publication status are summarized in:
+Selected accepted research outputs are listed in [publications/README.md](publications/README.md).
 
-`publications/README.md`
+Current highlighted work includes:
+- accepted journal research on fractional, bifurcation and chaotic behaviour in lossy electrical transmission-line models;
+- an accepted MLIC 2026 conference paper in machine learning / intelligent computing.
 
-## Technical Stack
+## Technical stack
 
 **Programming:** Python, MATLAB, C/C++, Java  
-**Data / ML:** pandas, NumPy, scikit-learn, PyTorch, time-series analysis  
+**Data / ML:** pandas, NumPy, scikit-learn, XGBoost, PyTorch, time-series analysis  
 **Scientific ML:** PINNs, neural operators, data-driven dynamical modelling  
-**Engineering:** sensor systems, embedded development, data acquisition, industrial monitoring
+**Engineering:** SCADA, sensors, Raspberry Pi, SPI/I2C, Flask, data acquisition
 
-## Repository Notes
+## Repository principles
 
-This repository is a research portfolio rather than a dump of raw project files. Public code is organized to make the methodology easy to inspect and reproduce. Raw industrial or licensed data are not uploaded.
+- public results should be traceable to code or stored metrics;
+- time-series evaluation should respect chronology;
+- successful and unsuccessful validation cases should both be visible;
+- proprietary company code and restricted data are not uploaded;
+- research prototypes should be described with their limitations, not only headline numbers.
 
 ## Contact
 
