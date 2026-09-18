@@ -1,0 +1,41 @@
+{
+  "case": {
+    "key": "t07_generator_bearing",
+    "turbine": "T07",
+    "target": "Gen_Bear_Temp_Avg",
+    "event_time": "2016-04-30T12:40:00+00:00",
+    "component": "Generator bearing",
+    "failure": "High temperature in generator bearing (sensor replaced)"
+  },
+  "sample_counts": {
+    "training": 2212,
+    "calibration": 3183,
+    "healthy_test": 2129,
+    "monitoring": 2386
+  },
+  "xgboost_test": {
+    "mae_c": 1.406783103942871,
+    "rmse_c": 1.866481120674471,
+    "r2": 0.9032951593399048
+  },
+  "ridge_test": {
+    "mae_c": 2.285899496075416,
+    "rmse_c": 3.406477813144612,
+    "r2": 0.6778841245603823
+  },
+  "residual_monitor": {
+    "ewma_alpha": 0.2,
+    "threshold_quantile": 0.995,
+    "ewma_threshold": 5.074588008754716,
+    "persistence_rule": ">=12 exceedances in trailing 3 hours"
+  },
+  "detection": {
+    "detected_in_30d_window": true,
+    "first_persistent_alarm": "2016-04-04T16:30:00+00:00",
+    "lead_time_hours": 620.1666666666666,
+    "lead_time_days": 25.840277777777775,
+    "healthy_test_false_alarm_episodes": 0,
+    "healthy_test_alarm_sample_rate": 0.0,
+    "monitoring_alarm_sample_rate": 0.013411567476948869
+  }
+}
