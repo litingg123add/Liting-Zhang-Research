@@ -1,50 +1,53 @@
-# Industrial Sensing and Digital-Twin Prototype
+# Industrial Sensing and Embedded Monitoring
 
 ## Overview
 
-This project documents an engineering workflow developed from hands-on work in industrial sensing, calibration and monitoring.
+This section documents engineering work in industrial sensing, calibration, embedded acquisition and real-time monitoring.
 
-The emphasis is not on a purely graphical "digital twin", but on the full chain:
+The core engineering chain is:
 
 ```
 sensor → acquisition → physical interpretation → monitoring logic → HMI
 ```
 
-## Engineering Background
+It is intentionally described as an **industrial sensing / monitoring prototype**, rather than presenting the internship system as a full digital twin.
 
-During my technology-development internship in Germany, I worked on a pressure-calibration / monitoring prototype involving embedded sensing, data acquisition and a browser-based HMI.
+## Engineering background
+
+During my technology-development internship in Germany, I worked on a pressure-calibration and monitoring prototype involving embedded sensing, data acquisition and a browser-based HMI.
 
 Publicly shareable technical elements include:
-- Raspberry Pi based edge computing
-- ADC and distance-sensor integration
-- SPI / I2C device communication
-- real-time measurement collection
-- Flask-based HMI
-- live curves and multilingual interface
-- engineering threshold logic
-- basic physical interpretation using fluid-flow models
+- Raspberry Pi 5 based edge computing;
+- ADC, pressure / load and distance-sensor integration;
+- SPI / I2C device communication;
+- real-time measurement collection;
+- Python calibration and monitoring logic;
+- Flask-based HMI;
+- live curves and multilingual interface;
+- engineering threshold logic;
+- physical interpretation using pressure–flow relationships.
 
-## System View
+## System view
 
 ### 1. Sensor layer
-Signals are collected from multiple sensors with different sampling and interface characteristics.
+Signals are collected from sensors with different interfaces and measurement characteristics.
 
 ### 2. Acquisition layer
-Raw values are converted into a consistent digital representation with timing and calibration information.
+Raw measurements are converted into a consistent digital representation with timing and calibration information.
 
-### 3. Physical layer
-Measurements are interpreted with engineering constraints rather than treated as isolated numbers. Depending on the subsystem, this can include flow, pressure, geometric or operating-condition relationships.
+### 3. Physical interpretation
+Measurements are interpreted using engineering constraints rather than treated as isolated numbers. Depending on the subsystem, this includes pressure, flow, geometry and operating-condition relationships.
 
 ### 4. Monitoring layer
-Thresholds and trend logic are used to identify abnormal states and support calibration / testing.
+Threshold and trend logic are used to support calibration, testing and abnormal-state identification.
 
 ### 5. HMI layer
-The monitoring state and live measurements are shown through a lightweight web interface for engineering use.
+Live measurements and monitoring state are displayed through a lightweight browser-based interface.
 
-## Why It Matters for My Research
+## Why it matters for my research
 
-This experience motivates my interest in combining data-driven models with physical knowledge. In industrial monitoring, a model has to work with imperfect sensors, changing operating conditions and real system constraints.
+This experience is one reason I am interested in combining data-driven models with physical knowledge. Real industrial monitoring has to cope with sensor imperfections, changing operating conditions and hardware constraints, not only offline benchmark accuracy.
 
-## Confidentiality Note
+## Confidentiality
 
-No proprietary company source code, calibration constants, customer data or internal technical documents are included in this public repository.
+No proprietary MEDTRON source code, calibration constants, customer data or internal technical documents are included in this public repository. This page describes only the engineering workflow and tools that can be disclosed safely.
