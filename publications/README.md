@@ -1,31 +1,40 @@
 # Publications and Accepted Research Outputs
 
-This page lists selected research outputs that can be disclosed publicly.
+This page lists selected research outputs that can be disclosed publicly. For items that are accepted but not yet indexed online, the acceptance evidence and manuscript can be provided directly when requested.
 
 ## Journal Article — Accepted
 
 **Exploring additional findings on the fraction, bifurcation and chaotic behaviors in models of lossy electrical transmission lines**
 
-Journal: *Pramana – Journal of Physics*  
-Status: **Accepted; proof / production stage**
+**Role:** First author  
+**Journal:** *Pramana – Journal of Physics*  
+**Status:** **Accepted; proof / production stage**
 
 Main topics:
-- nonlinear electrical transmission-line modelling
-- fractional-order dynamics
-- analytical solutions
-- bifurcation and chaotic behaviour
-- numerical verification
+- nonlinear electrical transmission-line modelling;
+- fractional-order dynamics;
+- analytical wave / soliton solutions;
+- bifurcation and phase-space analysis;
+- Lyapunov / Poincaré diagnostics;
+- numerical verification.
 
-The article is not yet fully searchable online because the final publication record is still being processed by the publisher.
+The final online publication record is still being processed by the publisher.
 
 ## Conference Paper — Accepted
 
-**MLIC 2026 — Machine Learning and Intelligent Computing**
+**Device-State-Aware Dynamic Job Shop Scheduling for Smart Factories with Machine-Learning-Assisted Risk Prediction**
 
-Status: **Accepted**
+**Role:** First author  
+**Venue:** MLIC 2026  
+**Status:** **Accepted**
 
-The work is an 8-page conference paper and forms part of my broader research experience in machine learning and intelligent computing.
+Main topics:
+- dynamic job-shop scheduling;
+- machine-learning-assisted equipment-risk prediction;
+- predictive-maintenance information in dispatching decisions;
+- machine-outage robustness;
+- interpretable scheduling rules.
 
-## Notes
+## Sharing note
 
-Where publisher copyright or conference policy does not allow redistribution of the final formatted paper, I do not upload the publisher PDF directly. Manuscripts or supplementary material will only be added when sharing is permitted.
+Publisher-formatted PDFs are not redistributed here unless public sharing is permitted. Manuscripts, acceptance evidence, and supporting material can be provided directly for academic review.
