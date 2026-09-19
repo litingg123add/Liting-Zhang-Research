@@ -56,7 +56,7 @@ Implemented components include:
 
 The SciML extension is designed around generalisation across dynamical regimes rather than random point-wise train/test splits.
 
-### 3. Industrial Sensing / Digital Twin
+### 3. Industrial Sensing / Embedded Monitoring
 
 Hands-on engineering work connects sensor acquisition, embedded computing, physical modelling and real-time monitoring.
 
@@ -67,7 +67,7 @@ Examples include:
 - physical interpretation of engineering measurements
 - Flask-based HMI and live visualisation
 
-Project: [Industrial-Digital-Twin](projects/Industrial-Digital-Twin/)
+Project: [Industrial sensing and embedded monitoring](projects/Industrial-Digital-Twin/)
 
 ## Publications
 
