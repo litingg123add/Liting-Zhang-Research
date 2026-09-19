@@ -67,7 +67,7 @@ Examples include:
 - physical interpretation of engineering measurements
 - Flask-based HMI and live visualisation
 
-Project: [Industrial sensing and embedded monitoring](projects/Industrial-Digital-Twin/)
+Engineering note: [Industrial sensing and embedded monitoring](projects/Industrial-Sensing-Monitoring/)
 
 ## Publications
 
