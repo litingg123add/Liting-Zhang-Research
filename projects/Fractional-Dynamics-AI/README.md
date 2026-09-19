@@ -3,7 +3,8 @@
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)
 ![Dynamics](https://img.shields.io/badge/Nonlinear-Dynamics-7c3aed)
 ![Numerics](https://img.shields.io/badge/Integrator-RK%203%2F8-0f766e)
-![Research](https://img.shields.io/badge/Pramana-Accepted-1f6feb)\n![tests](https://github.com/litingg123add/Liting-Zhang-Research/actions/workflows/fractional-dynamics-tests.yml/badge.svg)
+![Research](https://img.shields.io/badge/Pramana-Accepted-1f6feb)
+![tests](https://github.com/litingzhang-research/Liting-Zhang-Research/actions/workflows/fractional-dynamics-tests.yml/badge.svg)
 
 A public, reproducible subset of my research on **fractional nonlinear electrical transmission-line dynamics**, numerical verification and the transition from equation-based modelling to **Scientific Machine Learning**.
 
