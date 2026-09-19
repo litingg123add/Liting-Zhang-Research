@@ -2,18 +2,28 @@
 
 Raw EDP SCADA data are not duplicated in this repository.
 
-Run:
+The analysis uses the public EDP Wind Farm 1 data for 2016. The project expects:
+- wind-turbine SCADA signals;
+- the historical failure logbook.
+
+Primary dataset reference:
+- https://doi.org/10.17632/zjxjnjp3xs.1
+
+The repository also keeps the EDP source URLs in `src/prepare_data.py`. Because publisher / data-portal file paths can change over time, the DOI above is the stable reference.
+
+## Preparation
+
+When the direct EDP source files are reachable:
 
 ```bash
 python src/prepare_data.py
 ```
 
-The script downloads the official 2016 EDP SCADA workbook and maintenance log,
-then creates a compact local cache used by the analysis.
+If the source URLs have moved, download the two official 2016 files from the dataset source, place them under `data/raw/`, then run:
 
-Official source:
-- https://edp.com/en/innovation/data
-- https://doi.org/10.17632/zjxjnjp3xs.1
+```bash
+python src/prepare_data.py --skip-download
+```
 
 Expected generated files:
 
