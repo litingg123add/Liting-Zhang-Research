@@ -1,7 +1,13 @@
+from pathlib import Path
+import sys
+
 import numpy as np
 
-from src.lnetlm import LNETLMParameters, equilibrium_report, rhs
-from src.rk38 import integrate
+SRC = Path(__file__).resolve().parents[1] / "src"
+sys.path.insert(0, str(SRC))
+
+from lnetlm import LNETLMParameters, equilibrium_report, rhs
+from rk38 import integrate
 
 
 def test_equilibrium_classification():
