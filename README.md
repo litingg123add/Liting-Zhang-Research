@@ -38,17 +38,23 @@ Topics:
 
 Project: [Wind-PHM-AI](projects/Wind-PHM-AI/)
 
-### 2. Nonlinear Dynamics + Scientific Machine Learning
+### 2. Nonlinear Dynamics → Scientific Machine Learning
 
-My earlier research focuses on nonlinear and fractional-order dynamical systems, including analytical solutions, bifurcation, chaotic behaviour and numerical verification.
+This project now contains a reproducible public implementation of the reduced nonlinear electrical-transmission-line dynamics used in my accepted *Pramana* work.
 
-Current extension directions include:
-- PINNs / fractional PINNs
-- Fourier Neural Operators
-- DeepONet
-- long-horizon prediction of nonlinear and chaotic systems
+Implemented components include:
+- reduced LNETLM equations and Jacobian;
+- equilibrium and eigenvalue-based stability analysis;
+- fourth-order Runge–Kutta **3/8** integration;
+- phase-space and forcing-sensitivity diagnostics;
+- finite-time trajectory-separation diagnostics;
+- parameter-held-out trajectory datasets for later FNO / DeepONet / PINN comparisons.
 
-Project: [Fractional-Dynamics-AI](projects/Fractional-Dynamics-AI/)
+[**Open the full project →**](projects/Fractional-Dynamics-AI/)
+
+![Nonlinear-dynamics phase portrait](projects/Fractional-Dynamics-AI/assets/phase_portrait.svg)
+
+The SciML extension is designed around generalisation across dynamical regimes rather than random point-wise train/test splits.
 
 ### 3. Industrial Sensing / Digital Twin
 
@@ -68,7 +74,7 @@ Project: [Industrial-Digital-Twin](projects/Industrial-Digital-Twin/)
 Selected accepted research outputs are listed in [publications/README.md](publications/README.md).
 
 Current highlighted work includes:
-- accepted journal research on fractional, bifurcation and chaotic behaviour in lossy electrical transmission-line models;
+- accepted journal research on fractional, bifurcation and dynamical behaviour in lossy electrical transmission-line models;
 - an accepted MLIC 2026 conference paper in machine learning / intelligent computing.
 
 ## Technical stack
